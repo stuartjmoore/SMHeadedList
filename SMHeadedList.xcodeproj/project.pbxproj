@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17F68D161428F1B00061A49A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F68D151428F1B00061A49A /* UIKit.framework */; };
+		17F68D181428F1B00061A49A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F68D171428F1B00061A49A /* Foundation.framework */; };
+		17F68D1A1428F1B00061A49A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F68D191428F1B00061A49A /* CoreGraphics.framework */; };
+		17F68D201428F1B00061A49A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17F68D1E1428F1B00061A49A /* InfoPlist.strings */; };
+		17F68D221428F1B00061A49A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F68D211428F1B00061A49A /* main.m */; };
+		17F68D261428F1B00061A49A /* SMHeadedListAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F68D251428F1B00061A49A /* SMHeadedListAppDelegate.m */; };
+		17F68D291428F1B00061A49A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F68D271428F1B00061A49A /* MainWindow.xib */; };
+		17F68D2C1428F1B00061A49A /* SMHeadedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F68D2B1428F1B00061A49A /* SMHeadedListViewController.m */; };
+		17F68D2F1428F1B00061A49A /* SMHeadedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F68D2D1428F1B00061A49A /* SMHeadedListViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17F68D111428F1B00061A49A /* SMHeadedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMHeadedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F68D151428F1B00061A49A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		17F68D171428F1B00061A49A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		17F68D191428F1B00061A49A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		17F68D1D1428F1B00061A49A /* SMHeadedList-Info.plist */ = {isa = PBXFileReference; path = "SMHeadedList-Info.plist"; sourceTree = "<group>"; };
+		17F68D1F1428F1B00061A49A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		17F68D211428F1B00061A49A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		17F68D231428F1B00061A49A /* SMHeadedList-Prefix.pch */ = {isa = PBXFileReference; path = "SMHeadedList-Prefix.pch"; sourceTree = "<group>"; };
+		17F68D241428F1B00061A49A /* SMHeadedListAppDelegate.h */ = {isa = PBXFileReference; path = SMHeadedListAppDelegate.h; sourceTree = "<group>"; };
+		17F68D251428F1B00061A49A /* SMHeadedListAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMHeadedListAppDelegate.m; sourceTree = "<group>"; };
+		17F68D281428F1B00061A49A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		17F68D2A1428F1B00061A49A /* SMHeadedListViewController.h */ = {isa = PBXFileReference; path = SMHeadedListViewController.h; sourceTree = "<group>"; };
+		17F68D2B1428F1B00061A49A /* SMHeadedListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMHeadedListViewController.m; sourceTree = "<group>"; };
+		17F68D2E1428F1B00061A49A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SMHeadedListViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17F68D0E1428F1B00061A49A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F68D161428F1B00061A49A /* UIKit.framework in Frameworks */,
+				17F68D181428F1B00061A49A /* Foundation.framework in Frameworks */,
+				17F68D1A1428F1B00061A49A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17F68D061428F1B00061A49A = {
+			isa = PBXGroup;
+			children = (
+				17F68D1B1428F1B00061A49A /* SMHeadedList */,
+				17F68D141428F1B00061A49A /* Frameworks */,
+				17F68D121428F1B00061A49A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17F68D121428F1B00061A49A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17F68D111428F1B00061A49A /* SMHeadedList.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17F68D141428F1B00061A49A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17F68D151428F1B00061A49A /* UIKit.framework */,
+				17F68D171428F1B00061A49A /* Foundation.framework */,
+				17F68D191428F1B00061A49A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17F68D1B1428F1B00061A49A /* SMHeadedList */ = {
+			isa = PBXGroup;
+			children = (
+				17F68D241428F1B00061A49A /* SMHeadedListAppDelegate.h */,
+				17F68D251428F1B00061A49A /* SMHeadedListAppDelegate.m */,
+				17F68D271428F1B00061A49A /* MainWindow.xib */,
+				17F68D2A1428F1B00061A49A /* SMHeadedListViewController.h */,
+				17F68D2B1428F1B00061A49A /* SMHeadedListViewController.m */,
+				17F68D2D1428F1B00061A49A /* SMHeadedListViewController.xib */,
+				17F68D1C1428F1B00061A49A /* Supporting Files */,
+			);
+			path = SMHeadedList;
+			sourceTree = "<group>";
+		};
+		17F68D1C1428F1B00061A49A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				17F68D1D1428F1B00061A49A /* SMHeadedList-Info.plist */,
+				17F68D1E1428F1B00061A49A /* InfoPlist.strings */,
+				17F68D211428F1B00061A49A /* main.m */,
+				17F68D231428F1B00061A49A /* SMHeadedList-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17F68D101428F1B00061A49A /* SMHeadedList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17F68D321428F1B00061A49A /* Build configuration list for PBXNativeTarget "SMHeadedList" */;
+			buildPhases = (
+				17F68D0D1428F1B00061A49A /* Sources */,
+				17F68D0E1428F1B00061A49A /* Frameworks */,
+				17F68D0F1428F1B00061A49A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SMHeadedList;
+			productName = SMHeadedList;
+			productReference = 17F68D111428F1B00061A49A /* SMHeadedList.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17F68D081428F1B00061A49A /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 17F68D0B1428F1B00061A49A /* Build configuration list for PBXProject "SMHeadedList" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 17F68D061428F1B00061A49A;
+			productRefGroup = 17F68D121428F1B00061A49A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17F68D101428F1B00061A49A /* SMHeadedList */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17F68D0F1428F1B00061A49A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F68D201428F1B00061A49A /* InfoPlist.strings in Resources */,
+				17F68D291428F1B00061A49A /* MainWindow.xib in Resources */,
+				17F68D2F1428F1B00061A49A /* SMHeadedListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17F68D0D1428F1B00061A49A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F68D221428F1B00061A49A /* main.m in Sources */,
+				17F68D261428F1B00061A49A /* SMHeadedListAppDelegate.m in Sources */,
+				17F68D2C1428F1B00061A49A /* SMHeadedListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		17F68D1E1428F1B00061A49A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17F68D1F1428F1B00061A49A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		17F68D271428F1B00061A49A /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17F68D281428F1B00061A49A /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		17F68D2D1428F1B00061A49A /* SMHeadedListViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				17F68D2E1428F1B00061A49A /* en */,
+			);
+			name = SMHeadedListViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		17F68D301428F1B00061A49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		17F68D311428F1B00061A49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17F68D331428F1B00061A49A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMHeadedList/SMHeadedList-Prefix.pch";
+				INFOPLIST_FILE = "SMHeadedList/SMHeadedList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		17F68D341428F1B00061A49A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMHeadedList/SMHeadedList-Prefix.pch";
+				INFOPLIST_FILE = "SMHeadedList/SMHeadedList-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17F68D0B1428F1B00061A49A /* Build configuration list for PBXProject "SMHeadedList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F68D301428F1B00061A49A /* Debug */,
+				17F68D311428F1B00061A49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17F68D321428F1B00061A49A /* Build configuration list for PBXNativeTarget "SMHeadedList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F68D331428F1B00061A49A /* Debug */,
+				17F68D341428F1B00061A49A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17F68D081428F1B00061A49A /* Project object */;
+}
