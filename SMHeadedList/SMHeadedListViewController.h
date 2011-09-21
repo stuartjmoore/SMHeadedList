@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SMHeadedListViewController : UIViewController
+#import "SMHeaderCellView.h"
+
+@interface SMHeadedListViewController : UITableViewController <UITableViewDelegate>
+{
+    BOOL direction;
+    float threshold;
+}
+
+@property (nonatomic, retain) UITableView *headerTable;
+@property (nonatomic, retain) UITableView *itemsTable;
 
 @end

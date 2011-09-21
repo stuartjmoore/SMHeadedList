@@ -16,6 +16,7 @@
 		17F68D291428F1B00061A49A /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F68D271428F1B00061A49A /* MainWindow.xib */; };
 		17F68D2C1428F1B00061A49A /* SMHeadedListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F68D2B1428F1B00061A49A /* SMHeadedListViewController.m */; };
 		17F68D2F1428F1B00061A49A /* SMHeadedListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F68D2D1428F1B00061A49A /* SMHeadedListViewController.xib */; };
+		17F68D3D1429013D0061A49A /* SMHeaderCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17F68D3C1429013D0061A49A /* SMHeaderCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,18 @@
 		17F68D151428F1B00061A49A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17F68D171428F1B00061A49A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		17F68D191428F1B00061A49A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		17F68D1D1428F1B00061A49A /* SMHeadedList-Info.plist */ = {isa = PBXFileReference; path = "SMHeadedList-Info.plist"; sourceTree = "<group>"; };
+		17F68D1D1428F1B00061A49A /* SMHeadedList-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SMHeadedList-Info.plist"; sourceTree = "<group>"; };
 		17F68D1F1428F1B00061A49A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		17F68D211428F1B00061A49A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		17F68D231428F1B00061A49A /* SMHeadedList-Prefix.pch */ = {isa = PBXFileReference; path = "SMHeadedList-Prefix.pch"; sourceTree = "<group>"; };
-		17F68D241428F1B00061A49A /* SMHeadedListAppDelegate.h */ = {isa = PBXFileReference; path = SMHeadedListAppDelegate.h; sourceTree = "<group>"; };
+		17F68D231428F1B00061A49A /* SMHeadedList-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMHeadedList-Prefix.pch"; sourceTree = "<group>"; };
+		17F68D241428F1B00061A49A /* SMHeadedListAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMHeadedListAppDelegate.h; sourceTree = "<group>"; };
 		17F68D251428F1B00061A49A /* SMHeadedListAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMHeadedListAppDelegate.m; sourceTree = "<group>"; };
 		17F68D281428F1B00061A49A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		17F68D2A1428F1B00061A49A /* SMHeadedListViewController.h */ = {isa = PBXFileReference; path = SMHeadedListViewController.h; sourceTree = "<group>"; };
+		17F68D2A1428F1B00061A49A /* SMHeadedListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMHeadedListViewController.h; sourceTree = "<group>"; };
 		17F68D2B1428F1B00061A49A /* SMHeadedListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMHeadedListViewController.m; sourceTree = "<group>"; };
 		17F68D2E1428F1B00061A49A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SMHeadedListViewController.xib; sourceTree = "<group>"; };
+		17F68D3B1429013D0061A49A /* SMHeaderCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMHeaderCellView.h; sourceTree = "<group>"; };
+		17F68D3C1429013D0061A49A /* SMHeaderCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMHeaderCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				17F68D2A1428F1B00061A49A /* SMHeadedListViewController.h */,
 				17F68D2B1428F1B00061A49A /* SMHeadedListViewController.m */,
 				17F68D2D1428F1B00061A49A /* SMHeadedListViewController.xib */,
+				17F68D3B1429013D0061A49A /* SMHeaderCellView.h */,
+				17F68D3C1429013D0061A49A /* SMHeaderCellView.m */,
 				17F68D1C1428F1B00061A49A /* Supporting Files */,
 			);
 			path = SMHeadedList;
@@ -164,6 +169,7 @@
 				17F68D221428F1B00061A49A /* main.m in Sources */,
 				17F68D261428F1B00061A49A /* SMHeadedListAppDelegate.m in Sources */,
 				17F68D2C1428F1B00061A49A /* SMHeadedListViewController.m in Sources */,
+				17F68D3D1429013D0061A49A /* SMHeaderCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +287,7 @@
 				17F68D341428F1B00061A49A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
