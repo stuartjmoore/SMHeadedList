@@ -13,7 +13,6 @@
 @interface SMHeadedListViewController : UITableViewController <UITableViewDelegate>
 {
     BOOL direction;
-    float threshold;
 }
 
 @property (nonatomic, retain) UITableView *headerTable;

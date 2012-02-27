@@ -8,6 +8,10 @@
 
 #import "SMHeadedListViewController.h"
 
+#define threshold 20
+#define header_height 100
+#define items_height 480-20-30
+
 @implementation SMHeadedListViewController
 
 @synthesize headerTable = _headerTable, itemsTable = _itemsTable;
@@ -18,12 +22,10 @@
 {
     [super viewDidLoad];
     
-    threshold = 20;
-    
     self.headerTable = self.tableView;
     self.headerTable.scrollEnabled = NO;
     
-    self.itemsTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 480-20-30)];
+    self.itemsTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, items_height)];
     self.itemsTable.dataSource = self;
     self.itemsTable.delegate = self;
     
@@ -44,21 +46,21 @@
     else
         direction = NO;
     
-    if(self.headerTable.contentOffset.y < 100)
+    if(self.headerTable.contentOffset.y < header_height)
     {
         if(newPoint.y > 0)
         {
             if(self.itemsTable.contentOffset.y != 0)
                 [self.itemsTable setContentOffset:CGPointMake(0, 0)];
             
-            if(self.headerTable.contentOffset.y+newPoint.y < 100)
+            if(self.headerTable.contentOffset.y+newPoint.y < header_height)
                 [self.headerTable setContentOffset:CGPointMake(0, self.headerTable.contentOffset.y+newPoint.y)];
             else
-                [self.headerTable setContentOffset:CGPointMake(0, 100)];
+                [self.headerTable setContentOffset:CGPointMake(0, header_height)];
         }
     }
     
-    if(self.headerTable.contentOffset.y <= 100 && self.itemsTable.contentOffset.y < 0)
+    if(self.headerTable.contentOffset.y <= header_height && self.itemsTable.contentOffset.y < 0)
     {
         if(self.headerTable.contentOffset.y > 0)
         {        
@@ -81,10 +83,10 @@
     {
         if(self.headerTable.contentOffset.y < threshold)
             [self.headerTable setContentOffset:CGPointMake(0, 0) animated:YES];
-        else if(self.headerTable.contentOffset.y > 100-threshold)
-            [self.headerTable setContentOffset:CGPointMake(0, 100) animated:YES];
+        else if(self.headerTable.contentOffset.y > header_height-threshold)
+            [self.headerTable setContentOffset:CGPointMake(0, header_height) animated:YES];
         else if(direction)
-            [self.headerTable setContentOffset:CGPointMake(0, 100) animated:YES];
+            [self.headerTable setContentOffset:CGPointMake(0, header_height) animated:YES];
         else
             [self.headerTable setContentOffset:CGPointMake(0, 0) animated:YES];
     }
@@ -92,8 +94,8 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView*)scrollView
 {
-    if(direction || self.headerTable.contentOffset.y == 100)
-        [self.headerTable setContentOffset:CGPointMake(0, 100) animated:YES];
+    if(direction || self.headerTable.contentOffset.y == header_height)
+        [self.headerTable setContentOffset:CGPointMake(0, header_height) animated:YES];
     else
         [self.headerTable setContentOffset:CGPointMake(0, 0) animated:YES];
 }
@@ -149,9 +151,9 @@
     if(tableView == self.headerTable)
     {
         if(indexPath.section == 0)
-            return 100;
+            return header_height;
         else if(indexPath.section == 1)
-            return 480-20-30;
+            return items_height;
     }
     else if(tableView == self.itemsTable)
     {
