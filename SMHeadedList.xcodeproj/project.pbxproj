@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		179DA80414FC17C900359D54 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 179DA80314FC17C900359D54 /* README */; };
 		17F68D161428F1B00061A49A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F68D151428F1B00061A49A /* UIKit.framework */; };
 		17F68D181428F1B00061A49A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F68D171428F1B00061A49A /* Foundation.framework */; };
 		17F68D1A1428F1B00061A49A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F68D191428F1B00061A49A /* CoreGraphics.framework */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		179DA80314FC17C900359D54 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		17F68D111428F1B00061A49A /* SMHeadedList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMHeadedList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F68D151428F1B00061A49A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		17F68D171428F1B00061A49A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +104,7 @@
 				17F68D1E1428F1B00061A49A /* InfoPlist.strings */,
 				17F68D211428F1B00061A49A /* main.m */,
 				17F68D231428F1B00061A49A /* SMHeadedList-Prefix.pch */,
+				179DA80314FC17C900359D54 /* README */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				17F68D201428F1B00061A49A /* InfoPlist.strings in Resources */,
 				17F68D291428F1B00061A49A /* MainWindow.xib in Resources */,
 				17F68D2F1428F1B00061A49A /* SMHeadedListViewController.xib in Resources */,
+				179DA80414FC17C900359D54 /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
